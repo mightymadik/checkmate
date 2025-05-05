@@ -1,0 +1,3659 @@
+<!DOCTYPE html>
+<html lang="ru" class="fixed">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>DCP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <div class="top-section">
+      <div class="wrapper">
+        <div class="top-links">
+          <a href="checkerboard-project.html">Все проекты</a>
+          <a href="checkerboard.html" class="active">Бизнес-центры</a>
+          <a href="checkerboard-objects.html">Объекты</a>
+        </div>
+        <div class="green-block">
+          <div class="info">
+              <div class="select-info">
+                <span>Объекты</span>
+                <div class="select-wrap">
+                  <select>
+                    <option value="1">Все типы</option>
+                    <option value="2">Все типы 2</option>
+                    <option value="3">Все типы 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="select-info">
+                <span>Типы</span>
+                <div class="select-wrap">
+                  <select>
+                    <option value="1">Все типы</option>
+                    <option value="2">Все типы 2</option>
+                    <option value="3">Все типы 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="inputs-info">
+                <span>Площадь, м2</span>
+                <div class="inputs">
+                  <input type="text" placeholder="от 0">
+                  <input type="text" placeholder="до 254">
+                </div>
+              </div>
+              <div class="inputs-info">
+                <span>Стоимость, ₸</span>
+                <div class="inputs">
+                  <input type="text" placeholder="от 0">
+                  <input type="text" placeholder="до 60 500 000">
+                </div>
+              </div>
+              <div class="select-info">
+                <span>Этажи</span>
+                <div class="select-wrap">
+                  <select>
+                    <option value="1">Все этажи</option>
+                    <option value="2">Все этажи 2</option>
+                    <option value="3">Все этажи 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="select-info">
+                <span>Класс объекта</span>
+                <div class="select-wrap">
+                  <select>
+                    <option value="1">Все</option>
+                    <option value="2">Все 2</option>
+                    <option value="3">Все 3</option>
+                  </select>
+                </div>
+              </div>
+          </div>
+          <div class="checkboxes">
+            <div class="checkbox-wrap">
+              <label>
+                <input type="checkbox" name="checkbox" checked>
+                <span></span>
+                С мебелью
+              </label>
+            </div>
+            <div class="checkbox-wrap">
+              <label>
+                <input type="checkbox" name="checkbox">
+                <span></span>
+                Чистовая отделка
+              </label>
+            </div>
+            <div class="checkbox-wrap">
+              <label>
+                <input type="checkbox" name="checkbox">
+                <span></span>
+                Свободная планировка
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-wrapper">
+      <div class="wrapper">
+        <div class="top-info">
+          <div class="tabs">
+            <div class="tab" data-tab="1">Список</div>
+            <div class="tab" data-tab="2">Карточки</div>
+            <div class="tab active" data-tab="3">Шахматка</div>
+            <div class="tab" data-tab="4">Шахматка +</div>
+          </div>
+          <div class="infos">
+            <div class="info-item">
+              <span class="icon green"></span>
+              <span class="text">Свободно</span>
+            </div>
+            <div class="info-item">
+              <span class="icon yellow"></span>
+              <span class="text">Бронь</span>
+            </div>
+            <div class="info-item">
+              <span class="icon grey"></span>
+              <span class="text">Сдано</span>
+            </div>
+            <div class="info-item">
+              <span class="icon dGrey"></span>
+              <span class="text">Резерв</span>
+            </div>
+          </div>
+          <p>Свободно 250 помещений</p>
+        </div>
+        <div class="bottom-info">
+          <div class="contents">
+            <div class="tab-content" data-content="1">
+              <div class="list-items">
+                <div class="list-item">
+                  <div class="info-wrap">
+                    <div class="wrap">
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>План</span>
+                        </div>
+                        <div class="img">
+                          <img src="img/list-img.png" alt="">
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>Номер</span>
+                        </div>
+                        <div class="texts">
+                          <b>№102</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Площадь</span>
+                      </div>
+                      <div class="texts">
+                        <b>49.12</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Цена, ₸/м2 </span>
+                      </div>
+                      <div class="texts">
+                        <b>124 993</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Стоимость, ₸</span>
+                      </div>
+                      <div class="texts">
+                        <b>4 929 003</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Этаж</span>
+                      </div>
+                      <div class="texts">
+                        <b>2</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Тип</span>
+                      </div>
+                      <div class="tags">
+                        <a href="#" class="tag">A+</a>
+                        <a href="#" class="tag">С мебелью</a>
+                        <a href="#" class="tag">Чистовая отделка</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="info-wrap">
+                    <div class="wrap">
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>План</span>
+                        </div>
+                        <div class="img">
+                          <img src="img/list-img.png" alt="">
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>Номер</span>
+                        </div>
+                        <div class="texts">
+                          <b>№102</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Площадь</span>
+                      </div>
+                      <div class="texts">
+                        <b>49.12</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Цена, ₸/м2 </span>
+                      </div>
+                      <div class="texts">
+                        <b>124 993</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Стоимость, ₸</span>
+                      </div>
+                      <div class="texts">
+                        <b>4 929 003</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Этаж</span>
+                      </div>
+                      <div class="texts">
+                        <b>2</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Тип</span>
+                      </div>
+                      <div class="tags">
+                        <a href="#" class="tag">A+</a>
+                        <a href="#" class="tag">С мебелью</a>
+                        <a href="#" class="tag">Чистовая отделка</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="info-wrap">
+                    <div class="wrap">
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>План</span>
+                        </div>
+                        <div class="img">
+                          <img src="img/list-img.png" alt="">
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>Номер</span>
+                        </div>
+                        <div class="texts">
+                          <b>№102</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Площадь</span>
+                      </div>
+                      <div class="texts">
+                        <b>49.12</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Цена, ₸/м2 </span>
+                      </div>
+                      <div class="texts">
+                        <b>124 993</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Стоимость, ₸</span>
+                      </div>
+                      <div class="texts">
+                        <b>4 929 003</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Этаж</span>
+                      </div>
+                      <div class="texts">
+                        <b>2</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Тип</span>
+                      </div>
+                      <div class="tags">
+                        <a href="#" class="tag">A+</a>
+                        <a href="#" class="tag">С мебелью</a>
+                        <a href="#" class="tag">Чистовая отделка</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="info-wrap">
+                    <div class="wrap">
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>План</span>
+                        </div>
+                        <div class="img">
+                          <img src="img/list-img.png" alt="">
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>Номер</span>
+                        </div>
+                        <div class="texts">
+                          <b>№102</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Площадь</span>
+                      </div>
+                      <div class="texts">
+                        <b>49.12</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Цена, ₸/м2 </span>
+                      </div>
+                      <div class="texts">
+                        <b>124 993</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Стоимость, ₸</span>
+                      </div>
+                      <div class="texts">
+                        <b>4 929 003</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Этаж</span>
+                      </div>
+                      <div class="texts">
+                        <b>2</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Тип</span>
+                      </div>
+                      <div class="tags">
+                        <a href="#" class="tag">A+</a>
+                        <a href="#" class="tag">С мебелью</a>
+                        <a href="#" class="tag">Чистовая отделка</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="info-wrap">
+                    <div class="wrap">
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>План</span>
+                        </div>
+                        <div class="img">
+                          <img src="img/list-img.png" alt="">
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>Номер</span>
+                        </div>
+                        <div class="texts">
+                          <b>№102</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Площадь</span>
+                      </div>
+                      <div class="texts">
+                        <b>49.12</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Цена, ₸/м2 </span>
+                      </div>
+                      <div class="texts">
+                        <b>124 993</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Стоимость, ₸</span>
+                      </div>
+                      <div class="texts">
+                        <b>4 929 003</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Этаж</span>
+                      </div>
+                      <div class="texts">
+                        <b>2</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Тип</span>
+                      </div>
+                      <div class="tags">
+                        <a href="#" class="tag">A+</a>
+                        <a href="#" class="tag">С мебелью</a>
+                        <a href="#" class="tag">Чистовая отделка</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="info-wrap">
+                    <div class="wrap">
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>План</span>
+                        </div>
+                        <div class="img">
+                          <img src="img/list-img.png" alt="">
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>Номер</span>
+                        </div>
+                        <div class="texts">
+                          <b>№102</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Площадь</span>
+                      </div>
+                      <div class="texts">
+                        <b>49.12</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Цена, ₸/м2 </span>
+                      </div>
+                      <div class="texts">
+                        <b>124 993</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Стоимость, ₸</span>
+                      </div>
+                      <div class="texts">
+                        <b>4 929 003</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Этаж</span>
+                      </div>
+                      <div class="texts">
+                        <b>2</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Тип</span>
+                      </div>
+                      <div class="tags">
+                        <a href="#" class="tag">A+</a>
+                        <a href="#" class="tag">С мебелью</a>
+                        <a href="#" class="tag">Чистовая отделка</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="info-wrap">
+                    <div class="wrap">
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>План</span>
+                        </div>
+                        <div class="img">
+                          <img src="img/list-img.png" alt="">
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>Номер</span>
+                        </div>
+                        <div class="texts">
+                          <b>№102</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Площадь</span>
+                      </div>
+                      <div class="texts">
+                        <b>49.12</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Цена, ₸/м2 </span>
+                      </div>
+                      <div class="texts">
+                        <b>124 993</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Стоимость, ₸</span>
+                      </div>
+                      <div class="texts">
+                        <b>4 929 003</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Этаж</span>
+                      </div>
+                      <div class="texts">
+                        <b>2</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Тип</span>
+                      </div>
+                      <div class="tags">
+                        <a href="#" class="tag">A+</a>
+                        <a href="#" class="tag">С мебелью</a>
+                        <a href="#" class="tag">Чистовая отделка</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="info-wrap">
+                    <div class="wrap">
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>План</span>
+                        </div>
+                        <div class="img">
+                          <img src="img/list-img.png" alt="">
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="top">
+                          <img src="img/filter-icon.svg" alt="">
+                          <span>Номер</span>
+                        </div>
+                        <div class="texts">
+                          <b>№102</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Площадь</span>
+                      </div>
+                      <div class="texts">
+                        <b>49.12</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Цена, ₸/м2 </span>
+                      </div>
+                      <div class="texts">
+                        <b>124 993</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Стоимость, ₸</span>
+                      </div>
+                      <div class="texts">
+                        <b>4 929 003</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Этаж</span>
+                      </div>
+                      <div class="texts">
+                        <b>2</b>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="top">
+                        <img src="img/filter-icon.svg" alt="">
+                        <span>Тип</span>
+                      </div>
+                      <div class="tags">
+                        <a href="#" class="tag">A+</a>
+                        <a href="#" class="tag">С мебелью</a>
+                        <a href="#" class="tag">Чистовая отделка</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" data-content="2">
+              <div class="filter-top">
+                <div class="info">
+                  <img src="img/filter-icon.svg" alt="">
+                  <span>Площадь</span>
+                </div>
+                <div class="info">
+                  <img src="img/filter-icon.svg" alt="">
+                  <span>Тип</span>
+                </div>
+                <div class="info">
+                  <img src="img/filter-icon.svg" alt="">
+                  <span>Стоимость, ₸</span>
+                </div>
+              </div>
+              <div class="cards-items">
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+                <div class="card-item">
+                  <div class="card-slider">
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="img/popup-slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-info">
+                    <div class="texts">
+                      <span>№ 143</span>
+                      <b>122.38 м2</b>
+                    </div>
+                    <div class="prices">
+                      <span class="price">4 123 002 ₸</span>
+                      <span class="small-price">402 299 ₸/м2</span>
+                    </div>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <span>Секция</span>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <span>Срок сдачи</span>
+                      <span>Сдан</span>
+                    </li>
+                  </ul>
+                  <div class="btns">
+                    <a href="#">A+</a>
+                    <a href="#">С мебелью</a>
+                    <a href="#">Чистовая отделка</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content active" data-content="3">
+              <div class="checkerboard-items">
+                <div class="checkerboard-item">
+                  <h3>БЦ Алау</h3>
+                  <ul>
+                    <li>
+                      <span class="number">8</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">7</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">6</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">5</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">4</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                    </li>
+                    <li>
+                      <span class="number">3</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube yellow">123</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">2</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                    </li>
+                    <li>
+                      <span class="number">1</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                    </li>
+                    <li>
+                      <span class="number">P</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube">143</span>
+                      <span class="cube">143</span>
+                      <span class="cube">143</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="checkerboard-item">
+                  <h3>БЦ Керемет</h3>
+                  <ul>
+                    <li>
+                      <span class="number">8</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">7</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">6</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">5</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">4</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                    </li>
+                    <li>
+                      <span class="number">3</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube yellow">123</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">2</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                    </li>
+                    <li>
+                      <span class="number">1</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                    </li>
+                    <li>
+                      <span class="number">P</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube">143</span>
+                      <span class="cube">143</span>
+                      <span class="cube">143</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="checkerboard-item">
+                  <h3>БЦ Т42</h3>
+                  <ul>
+                    <li>
+                      <span class="number">8</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">7</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">6</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">5</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">4</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                    </li>
+                    <li>
+                      <span class="number">3</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube yellow">123</span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                      <span class="cube"></span>
+                    </li>
+                    <li>
+                      <span class="number">2</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                    </li>
+                    <li>
+                      <span class="number">1</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                    </li>
+                    <li>
+                      <span class="number">P</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube green">143</span>
+                      <span class="cube">143</span>
+                      <span class="cube">143</span>
+                      <span class="cube">143</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" data-content="4">
+              <div class="filter-top">
+                <div class="info">
+                  <img src="img/filter-icon.svg" alt="">
+                  <span>Площадь</span>
+                </div>
+                <div class="info">
+                  <img src="img/filter-icon.svg" alt="">
+                  <span>Тип</span>
+                </div>
+                <div class="info">
+                  <img src="img/filter-icon.svg" alt="">
+                  <span>Стоимость, ₸</span>
+                </div>
+              </div>
+              <div class="checkerboard-items style2">
+                <div class="checkerboard-item">
+                  <h3>БС Алау</h3>
+                  <ul>
+                    <li>
+                      <span class="number">7</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">6</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">5</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">4</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube green">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube yellow">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube grey">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">3</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">2</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">1</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">P</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="checkerboard-item">
+                  <h3>БС Керемет</h3>
+                  <ul>
+                    <li>
+                      <span class="number">7</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">6</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">5</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">4</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube green">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube yellow">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube grey">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">3</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">2</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">1</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">P</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="checkerboard-item">
+                  <h3>БС Т42</h3>
+                  <ul>
+                    <li>
+                      <span class="number">7</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">6</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">5</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">4</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube green">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube yellow">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube grey">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">3</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">2</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">1</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="number">P</span>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                      <div class="cube">
+                        <div class="top">
+                          <span>№ 142</span>
+                          <span>85.9 м2</span>
+                        </div>
+                        <div class="texts">
+                          <span>400 240 ₸/м2</span>
+                          <span>6 004 667 ₸</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup" class="popup hidden">
+      <button id="popup-close">✖</button>
+      <div class="popup-slider">
+        <div><img src="img/popup-slider-img.png" alt=""></div>
+        <div><img src="img/popup-slider-img.png" alt=""></div>
+        <div><img src="img/popup-slider-img.png" alt=""></div>
+      </div>
+      <div class="popup-info">
+        <div class="top-info">
+          <span>1к</span>
+          <b>122.38 м2</b>
+        </div>
+        <div class="bottom-info">
+          <span class="price">4 123 002 ₸</span>
+          <span class="small-price">402 299 ₸/м2</span>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        const popup = document.getElementById('popup');
+  let currentCube = null;
+  let popupVisible = false;
+  
+  const isMobile = () => window.innerWidth < 768;
+  
+  function showPopup(x = 0, y = 0) {
+    popup.classList.remove('hidden');
+    popupVisible = true;
+  
+    if (isMobile()) {
+      popup.style.position = 'fixed';
+      popup.style.left = '50%';
+      popup.style.top = '50%';
+      popup.style.transform = 'translate(-50%, -50%)';
+    } else {
+      popup.style.position = 'absolute';
+      popup.style.left = x + 'px';
+      popup.style.top = y + 'px';
+      popup.style.transform = 'none';
+    }
+  
+    const slider = $('.popup-slider');
+    if (!slider.hasClass('slick-initialized')) {
+      slider.slick({
+        dots: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+    }
+  }
+  
+  function hidePopup() {
+    popup.classList.add('hidden');
+    popupVisible = false;
+    currentCube = null;
+  }
+  
+  document.querySelector('.checkerboard-items').addEventListener('click', function (e) {
+    if (!isMobile()) return;
+  
+    const cube = e.target.closest('.cube');
+    if (!cube) return;
+  
+    currentCube = cube;
+    showPopup(); // мобилка — центр
+  });
+  
+  document.querySelector('.checkerboard-items').addEventListener('mouseover', function (e) {
+    if (isMobile()) return;
+  
+    const cube = e.target.closest('.cube');
+    if (!cube) return;
+  
+    currentCube = cube;
+  
+    const rect = cube.getBoundingClientRect();
+    showPopup(rect.right, rect.top);
+  });
+  
+  document.querySelector('.checkerboard-items').addEventListener('mouseout', function (e) {
+    if (isMobile()) return;
+  
+    const related = e.relatedTarget;
+    if (!popup.contains(related)) hidePopup();
+  });
+  
+  popup.addEventListener('mouseover', () => {});
+  popup.addEventListener('mouseout', (e) => {
+    const related = e.relatedTarget;
+    if (!popup.contains(related)) hidePopup();
+  });
+  
+  document.getElementById('popup-close').addEventListener('click', hidePopup);
+  
+  window.addEventListener('resize', () => {
+    if (!popupVisible || !currentCube) return;
+  
+    const rect = currentCube.getBoundingClientRect();
+  
+    if (isMobile()) {
+      showPopup(); // центр
+    } else {
+      showPopup(rect.right, rect.top);
+    }
+  });
+    </script>
+  </body>
+</html>
