@@ -843,6 +843,7 @@ label.error {
 }
 .checkerboard-items .checkerboard-item ul li .cube {
   height: 30px;
+  min-width: 30px;
   border-radius: 4px;
   background: #999999;
   display: -webkit-box;

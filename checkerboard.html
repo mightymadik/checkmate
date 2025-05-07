@@ -9,10 +9,10 @@
   <title>DCP</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/slick.css" />
-  <link rel="stylesheet" href="css/slick-theme.css" />
-  <link rel="stylesheet" href="css/select2.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
@@ -1262,24 +1262,8 @@
             </div>
           </div>
           <div class="tab-content active" data-content="3">
-            <div class="checkerboard-items" id="checkerboard-container">
-              <div class="checkerboard-item">
-                <h3>БЦ Алау</h3>
-                <ul>
-                  <li>
-                    <span class="number">8</span>
-                    <span class="cube"></span>
-                    <span class="cube"></span>
-                    <span class="cube"></span>
-                    <span class="cube"></span>
-                    <span class="cube"></span>
-                    <span class="cube"></span>
-                    <span class="cube"></span>
-                    <span class="cube"></span>
-                    <span class="cube"></span>
-                  </li>
-                </ul>
-              </div>
+            <div class="checkerboard-items" id="output">
+
             </div>
           </div>
           <div class="tab-content" data-content="4">
@@ -3248,183 +3232,7 @@
   <script src="js/jquery.validate.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/script.js"></script>
-
-  <script>
-const listUrl = 'https://crm.uak.kz/rest/219/0ltilbn9jqxg5ip4/crm.item.list?entityTypeId=1060';
-const fieldsUrl = 'https://crm.uak.kz/rest/219/0ltilbn9jqxg5ip4/crm.item.fields?entityTypeId=1060';
-Promise.all([
-  fetch(listUrl).then(res => res.json()).catch(err => console.error('Ошибка получения списка:', err)),
-  fetch(fieldsUrl).then(res => res.json()).catch(err => console.error('Ошибка получения полей:', err))
-])
-.then(([listData, fieldData]) => {
-  if (!listData || !fieldData) {
-    console.error('Нет данных для обработки');
-    return;
-  }
-
-  console.log('listData:', listData);
-  console.log('fieldData:', fieldData);
-
-  const items = listData.result.items;
-  const fields = fieldData.result.fields;
-
-  // Проверяем структуру данных для поля ufCrm11_1746081771
-  const fieldValues = fields['ufCrm11_1746081771'];
-  console.log('Значения для ufCrm11_1746081771:', fieldValues);
-
-  if (!fieldValues) {
-    console.error('Не удалось найти значения для ufCrm11_1746081771');
-    return;
-  }
-
-  const idToNameMap = {};
-  if (fieldValues.items) {
-    fieldValues.items.forEach(obj => {
-      idToNameMap[obj.ID] = obj.VALUE;
-    });
-  } else {
-    idToNameMap[fieldValues.ID] = fieldValues.VALUE;
-  }
-
-  // Группируем элементы по названиям
-  const groupedItems = {};
-
-  items.forEach(item => {
-    const objectId = item['ufCrm11_1746081771'];
-    const objectName = idToNameMap[objectId] || 'Неизвестно';
-
-    if (!groupedItems[objectName]) {
-      groupedItems[objectName] = [];
-    }
-
-    groupedItems[objectName].push(item);
-  });
-
-  const container = document.querySelector('#checkerboard-container');
-  container.innerHTML = '';
-
-  // Создаем блоки для каждой группы
-  Object.keys(groupedItems).forEach(objectName => {
-    const groupItems = groupedItems[objectName];
-
-    const groupHtml = `
-      <div class="checkerboard-item">
-        <h3>${objectName}</h3>
-        <ul>
-          ${groupItems.map(item => `
-            <li>
-              <span class="number">8</span>
-              <span class="cube"></span>
-              <span class="cube"></span>
-              <span class="cube"></span>
-              <span class="cube"></span>
-              <span class="cube"></span>
-              <span class="cube"></span>
-              <span class="cube"></span>
-              <span class="cube"></span>
-            </li>
-          `).join('')}
-        </ul>
-      </div>
-    `;
-
-    container.insertAdjacentHTML('beforeend', groupHtml);
-  });
-}).catch(err => {
-  console.error('Ошибка при получении данных:', err);
-});
-
-  </script>
-
-  <script>
-    const popup = document.getElementById('popup');
-    let currentCube = null;
-    let popupVisible = false;
-
-    const isMobile = () => window.innerWidth < 768;
-
-    function showPopup(x = 0, y = 0) {
-      popup.classList.remove('hidden');
-      popupVisible = true;
-
-      if (isMobile()) {
-        popup.style.position = 'fixed';
-        popup.style.left = '50%';
-        popup.style.top = '50%';
-        popup.style.transform = 'translate(-50%, -50%)';
-      } else {
-        popup.style.position = 'absolute';
-        popup.style.left = x + 'px';
-        popup.style.top = y + 'px';
-        popup.style.transform = 'none';
-      }
-
-      const slider = $('.popup-slider');
-      if (!slider.hasClass('slick-initialized')) {
-        slider.slick({
-          dots: true,
-          arrows: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        });
-      }
-    }
-
-    function hidePopup() {
-      popup.classList.add('hidden');
-      popupVisible = false;
-      currentCube = null;
-    }
-
-    document.querySelector('.checkerboard-items').addEventListener('click', function (e) {
-      if (!isMobile()) return;
-
-      const cube = e.target.closest('.cube');
-      if (!cube) return;
-
-      currentCube = cube;
-      showPopup(); // мобилка — центр
-    });
-
-    document.querySelector('.checkerboard-items').addEventListener('mouseover', function (e) {
-      if (isMobile()) return;
-
-      const cube = e.target.closest('.cube');
-      if (!cube) return;
-
-      currentCube = cube;
-
-      const rect = cube.getBoundingClientRect();
-      showPopup(rect.right, rect.top);
-    });
-
-    document.querySelector('.checkerboard-items').addEventListener('mouseout', function (e) {
-      if (isMobile()) return;
-
-      const related = e.relatedTarget;
-      if (!popup.contains(related)) hidePopup();
-    });
-
-    popup.addEventListener('mouseover', () => { });
-    popup.addEventListener('mouseout', (e) => {
-      const related = e.relatedTarget;
-      if (!popup.contains(related)) hidePopup();
-    });
-
-    document.getElementById('popup-close').addEventListener('click', hidePopup);
-
-    window.addEventListener('resize', () => {
-      if (!popupVisible || !currentCube) return;
-
-      const rect = currentCube.getBoundingClientRect();
-
-      if (isMobile()) {
-        showPopup(); // центр
-      } else {
-        showPopup(rect.right, rect.top);
-      }
-    });
-  </script>
+  <script src="js/elementsDisplay/script.js"></script>
 </body>
 
 </html>
