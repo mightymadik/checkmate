@@ -28,16 +28,28 @@ async function getFloorsAndSections(listUrl, fieldsUrl, config) {
                 pricePerM2: item[config.priceM2Key],
                 totalPrice: item[config.totalPriceKey],
                 img: item[config.img],
+                classObject: item[config.classObject],
+                freeObject: item[config.freeObject],
             };
         } else if (config.checkmatePlus) {
             result[objectName][floorName][section] = {
                 id: item.id,
                 title: item[config.titleKey],
                 pricePerM2: item[config.priceM2Key],
+                img: item[config.img],
                 totalPrice: item[config.totalPriceKey],
+                classObject: item[config.classObject],
+                freeObject: item[config.freeObject],
             };
         } else if (config.checkmate) {
-            result[objectName][floorName][section] = item[config.titleKey];
+            result[objectName][floorName][section] = {
+                id: item.id,
+                title: item[config.titleKey],
+                img: item[config.img],
+                freeObject: item[config.freeObject],
+                pricePerM2: item[config.priceM2Key],
+                totalPrice: item[config.totalPriceKey],
+            };
         }        
 
     });

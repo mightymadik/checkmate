@@ -1,62 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru" class="fixed">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <title>DCP</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/select2.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
 
     <div class="top-section">
-      <div class="wrapper">
-        <div class="top-links">
-          <a href="checkerboard-project.html">Все проекты</a>
-          <a href="checkerboard.html">Бизнес-центры</a>
-          <a href="checkerboard-objects.html" class="active">Объекты</a>
+        <div class="wrapper">
+            <div class="top-links">
+                <a href="checkerboard-project.html">Все проекты</a>
+                <a href="checkerboard.html">Бизнес-центры</a>
+                <a href="checkerboard-objects.html" class="active">Объекты</a>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="checkerboard-objects">
         <div class="wrapper">
             <div class="top">
-                <span>БС Керемет</span>
+                <span id="detail-object">БС Керемет</span>
                 <img src="img/arr-right.svg" alt="">
-                <span>№423</span>
+                <span id="detail-title">№423</span>
             </div>
             <div class="info">
                 <div class="left-info">
-                    <h4>№423</h4>
-                    <div class="tags">
-                        <a href="#" class="tag">Чистовая отделка</a>
-                        <a href="#" class="tag">А+</a>
-                        <a href="#" class="tag">С мебелью</a>
-                    </div>
+                    <h4 id="detail-title1">№423</h4>
+                    <div class="tags" id="detail-class-container"></div>
                     <div class="texts">
                         <div class="text">
                             <span>Площадь</span>
-                            <span>47.2 м2</span>
+                            <span id="detail-area">47.2 м2</span>
                         </div>
                         <div class="text">
                             <span>Этаж</span>
-                            <span>2/19</span>
+                            <span id="detail-floor"></span>
                         </div>
                         <div class="text">
                             <span>Секция</span>
-                            <span>1</span>
+                            <span id="detail-section">1</span>
                         </div>
                     </div>
                     <div class="prices">
-                        <div class="big-price">3 134 493 ₸ </div>
-                        <div class="small-price">123 993 ₸/м2 </div>
+                        <div id="detail-price" class="big-price">3 134 493 ₸ </div>
+                        <div id="detail-pricePerM2" class="small-price">123 993 ₸/м2 </div>
                     </div>
                     <button type="button" class="green-btn">Отправить заявку</button>
                     <div class="icons">
@@ -84,13 +82,13 @@
                         <a href="#" class="grey-btn">Галерея</a>
                     </div>
                     <div class="image-wrapper">
-                        <img src="img/checkerboard-objects-img.png" alt="">
+                        <img id="detail-img" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
@@ -98,5 +96,13 @@
     <script src="js/jquery.validate.js"></script>
     <script src="js/select2.min.js"></script>
     <script src="js/script.js"></script>
-  </body>
+    <script src="js/models/webhooks/script.js"></script>
+    <script src="js/models/fetchItems/script.js"></script>
+    <script src="js/models/fetchFields/script.js"></script>
+    <script src="js/models/getGroupedItems/script.js"></script>
+    <script src="js/models/floorPlanner/script.js"></script>
+    <script src="js/models/dataGeneric/script.js"></script>
+    <script src="js/controllers/detailPage/script.js"></script>
+</body>
+
 </html>

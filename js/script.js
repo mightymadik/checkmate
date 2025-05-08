@@ -110,6 +110,20 @@ $(document).ready(function () {
     popup.classList.remove('hidden');
     popupVisible = true;
 
+    if (currentCube) {
+      const title = currentCube.dataset.title || '';
+      const totalPrice = currentCube.dataset.totalPrice || '';
+      const pricePerM2 = currentCube.dataset.pricePerM2 || '';
+      const id = currentCube.dataset.id || '';
+      const img = currentCube.dataset.img || '';
+
+      document.querySelector('#popup .popup-slider img').src = img;
+      document.querySelector('#popup .top-info span').textContent = `№ ${id}`;
+      document.querySelector('#popup .top-info b').textContent = `${title} м2`;
+      document.querySelector('#popup .bottom-info .price').textContent = `${totalPrice} ₸`;
+      document.querySelector('#popup .bottom-info .small-price').textContent = `${pricePerM2} ₸/м2`;
+    }
+
     if (isMobile()) {
       popup.style.position = 'fixed';
       popup.style.left = '50%';
