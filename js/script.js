@@ -18,11 +18,6 @@ $(document).ready(function () {
     },
   });
 
-
-  $(".select-wrap select").select2({
-    minimumResultsForSearch: 6,
-  });
-
   $('.card-slider').slick({
     dots: true,
     arrows: false,
@@ -34,12 +29,12 @@ $(document).ready(function () {
 
   const tabs = document.querySelectorAll('.tab');
   const contents = document.querySelectorAll('.tab-content');
-  
+
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       tabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
-  
+
       const target = tab.getAttribute('data-tab');
       contents.forEach(c => {
         c.classList.remove('active');
@@ -49,7 +44,7 @@ $(document).ready(function () {
       });
     });
   });
-  
+
   function initAllTabSliders() {
     document.querySelectorAll('.tab-content .popup-slider').forEach(slider => {
       const $slider = $(slider);
@@ -63,43 +58,40 @@ $(document).ready(function () {
       }
     });
   }
-  
-  initAllTabSliders(); // вызываем один раз при загрузке
-  
 
-  
-  
+  initAllTabSliders(); // вызываем один раз при загрузке
+
   document.querySelectorAll('.checkerboard-items').forEach(items => {
     items.addEventListener('click', function (e) {
       if (!isMobile()) return;
-  
+
       const cube = e.target.closest('.cube');
       if (!cube) return;
-  
+
       currentCube = cube;
       showPopup(); // мобилка — центр
     });
-  
+
     items.addEventListener('mouseover', function (e) {
       if (isMobile()) return;
-  
+
       const cube = e.target.closest('.cube');
       if (!cube) return;
-  
+
       currentCube = cube;
-  
+
       const rect = cube.getBoundingClientRect();
       showPopup(rect.right, rect.top);
     });
-  
+
     items.addEventListener('mouseout', function (e) {
       if (isMobile()) return;
-  
+
       const related = e.relatedTarget;
       if (!popup.contains(related)) hidePopup();
     });
   });
-  
+
   const popup = document.getElementById('popup');
   let currentCube = null;
   let popupVisible = false;
@@ -115,14 +107,15 @@ $(document).ready(function () {
       const totalPrice = currentCube.dataset.totalPrice || '';
       const pricePerM2 = currentCube.dataset.pricePerM2 || '';
       const id = currentCube.dataset.id || '';
-      const img = currentCube.dataset.img || '';
+      const linkPlan = currentCube.dataset.linkPlan || '';
 
-      document.querySelector('#popup .popup-slider img').src = img;
+      document.querySelector('#popup .popup-slider img').src = linkPlan;
       document.querySelector('#popup .top-info span').textContent = `№ ${id}`;
       document.querySelector('#popup .top-info b').textContent = `${title} м2`;
       document.querySelector('#popup .bottom-info .price').textContent = `${totalPrice} ₸`;
       document.querySelector('#popup .bottom-info .small-price').textContent = `${pricePerM2} ₸/м2`;
     }
+
 
     if (isMobile()) {
       popup.style.position = 'fixed';

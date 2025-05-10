@@ -1,4 +1,4 @@
-async function getGroupedItemsByObjectName(listUrl, fieldsUrl, objectFieldKey) {
+ async function getGroupedItemsByObjectName(listUrl, fieldsUrl, objectFieldKey) {
     const [allItems, fieldMaps] = await Promise.all([
         fetchAllItems(listUrl),
         fetchFieldValues(fieldsUrl, [objectFieldKey])

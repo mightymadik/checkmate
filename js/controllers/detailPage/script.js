@@ -12,6 +12,7 @@ getCombinedDataGeneric({
     totalPriceKey: 'opportunity',
     img: 'ufCrm11_1746636341',
     classObject: 'ufCrm11_1746641732',
+    features: 'ufCrm11_1746790826',
     freeObject: 'ufCrm11_1746081669',
     card: true
 }).then(data => {
@@ -19,7 +20,7 @@ getCombinedDataGeneric({
     if (apartment) {
         renderDetail(apartment);
     } else {
-        document.body.innerHTML = '<p>Квартира не найдена</p>';
+        document.body.innerHTML = '<p>Объект не найдена</p>';
     }
 });
 
@@ -47,8 +48,8 @@ function findApartmentById(data, id) {
 function renderDetail({ apt, floor, section, objectName }) {
     const cleanedPricePerM2 = (apt.pricePerM2 || '').replace(/KZT|\|/g, '').trim();
 
-    document.querySelector('#detail-title').textContent = `Квартира №${apt.id}`;
-    document.querySelector('#detail-title1').textContent = `Квартира №${apt.id}`;
+    document.querySelector('#detail-title').textContent = `№ ${apt.id}`;
+    document.querySelector('#detail-title1').textContent = `№ ${apt.id}`;
     document.querySelector('#detail-price').textContent = `${Number(apt.totalPrice).toLocaleString('ru-RU')} ₸`;
     document.querySelector('#detail-pricePerM2').textContent = `${Number(cleanedPricePerM2).toLocaleString('ru-RU')} ₸/м²`;
     document.querySelector('#detail-area').textContent = `${Math.round(parseFloat(apt.title))} м²`;
@@ -59,17 +60,25 @@ function renderDetail({ apt, floor, section, objectName }) {
     const classContainer = document.querySelector('#detail-class-container');
     classContainer.innerHTML = ''; // очищаем старые теги
 
-    (apt.classObject || []).forEach(item => {
+    if (apt.classObject) {
         const tag = document.createElement('a');
         tag.className = 'tag';
-        tag.textContent = item;
+        tag.textContent = apt.classObject;
         classContainer.appendChild(tag);
-    });
+    }
 
+    if (Array.isArray(apt.features)) {
+        apt.features.forEach(feature => {
+            const tag = document.createElement('a');
+            tag.className = 'tag';
+            tag.textContent = feature;
+            classContainer.appendChild(tag);
+        });
+    }
 
     if (apt.img) {
         const imgElement = document.querySelector('#detail-img');
-    
+
         if (Array.isArray(apt.img)) {
             // Если массив, берём первый элемент и его ссылку
             const firstImage = apt.img[0];
@@ -86,6 +95,6 @@ function renderDetail({ apt, floor, section, objectName }) {
             imgElement.src = apt.img;
             imgElement.alt = `Фото квартиры №${apt.id}`;
         }
-    }    
+    }
 }
 

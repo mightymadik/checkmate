@@ -1,4 +1,4 @@
-async function fetchFieldValues(fieldsUrl, fieldKeys) {
+ async function fetchFieldValues(fieldsUrl, fieldKeys) {
     const fieldsRes = await fetch(fieldsUrl).then(res => res.json());
     const fields = fieldsRes?.result?.fields;
 
@@ -17,4 +17,4 @@ async function fetchFieldValues(fieldsUrl, fieldKeys) {
     });
 
     return result;
-}
+} 

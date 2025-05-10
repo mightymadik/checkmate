@@ -22,9 +22,8 @@
       <div class="top-links">
         <a href="checkerboard-project.html">Все проекты</a>
         <a href="checkerboard.html" class="active">Бизнес-центры</a>
-        <a href="checkerboard-objects.html">Объекты</a>
       </div>
-      <div class="green-block">
+      <div class="green-block" id="filters-container">
         <div class="info">
           <div class="select-info">
             <span>Объекты</span>
@@ -64,9 +63,9 @@
             <span>Этажи</span>
             <div class="select-wrap">
               <select>
-                <option value="1">Все этажи</option>
-                <option value="2">Все этажи 2</option>
-                <option value="3">Все этажи 3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
               </select>
             </div>
           </div>
@@ -84,7 +83,7 @@
         <div class="checkboxes">
           <div class="checkbox-wrap">
             <label>
-              <input type="checkbox" name="checkbox" checked>
+              <input type="checkbox" name="checkbox">
               <span></span>
               С мебелью
             </label>
@@ -293,11 +292,11 @@
   <script src="js/models/getGroupedItems/script.js"></script>
   <script src="js/models/floorPlanner/script.js"></script>
   <script src="js/models/dataGeneric/script.js"></script>
+  <script src="js/controllers/filter/script.js"></script>
   <script src="js/controllers/checkmate/script.js"></script>
   <script src="js/controllers/checkmatePlus/script.js"></script>
   <script src="js/controllers/card/script.js"></script>
   <script src="js/controllers/list/script.js"></script>
   <script src="js/script.js"></script>
-  
 </body>
 </html>

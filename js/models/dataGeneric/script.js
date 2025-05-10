@@ -4,9 +4,9 @@ async function getCombinedDataGeneric(config) {
 
     const combinedData = {};
 
+    // Проверим, что данные действительно есть для каждого objectName
     for (const objectName in groupedItems) {
         combinedData[objectName] = {
-            items: groupedItems[objectName],
             floors: floorsByObject[objectName] || {},
         };
     }
